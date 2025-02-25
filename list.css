@@ -1,0 +1,286 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: burlywood;
+    color: rgb(70, 40, 38);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    /* opacity: 0.4; */
+} 
+
+.nav::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+.nav ul{
+    color: white;
+    display: flex;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    /* margin: 10px; */
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.nav ul li a:hover{
+    color: white;
+    background-color: rgb(223, 41, 41);
+    }
+
+.nav img{
+    height: 40px;
+    width: 85px;
+    margin: 11px 10px 7px 10px;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+}
+
+#Home{
+    display: flex;
+    width: 100%;
+    height: 630px;
+    flex-direction: column;
+    align-items: center;
+    /* top: 0px;
+    left: 0px; */
+    justify-content: center;
+    padding: 3px 40px;
+    color: black;
+}
+
+#Home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url("./images/Bg.jpg") no-repeat center center/cover;
+    background-size: 100% 100vh;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#Home h1{
+    text-align: center;
+}
+
+#Home p{
+    text-align: center;
+    /* font-size: 0.8rem; */
+    padding-top: 10px;
+}
+
+#Home p1{
+    text-align: center;
+    /* font-size: 0.8rem; */
+}
+
+.btn{
+    font-size: 20px;
+    padding: 6px 30px;
+    border: 2px solid white;
+    background-color: orangered;
+    /* background: transparent; */
+    color:white;
+    border-radius: 18px;
+    margin: 15px;
+    /* cursor: pointer; */
+}
+
+.btn:hover{
+    background-color: rgb(82, 22, 0);
+}
+
+.center{
+    text-align: center;
+    /* height: 30px; */
+}
+
+.h-primary{
+    padding: 17px 5px 10px 5px ;
+}
+
+#services{
+    background-color:rgb(230, 135, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 25px 25px 25px;    
+}
+
+.box-1{
+    border: 2px solid rgb(233, 38, 38);
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 10px;
+    border-radius: 10px;
+    height: 350px;
+    width: 240px;
+    text-align: center;
+}
+
+.box-1 img{
+    height: 200px;
+    width: 100%;
+    padding: 30px;
+    /* background: transparent; */
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+}
+
+.box-1 p{
+    padding: 30px;
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.addtoCart{
+    padding: 6px;
+    /* margin-bottom: 4px; */
+}
+.buyNow{
+    padding: 5px;
+}
+
+
+/* Contact Section */
+
+#Contact{
+    position: relative;
+}
+
+#Contact::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background:url(images/SANDAL3.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.Contact-box{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 0px 30px 25px 22px;
+
+}
+
+.Contact-box input,
+.Contact-box textarea{
+    width: 100%;
+    padding: 6px;
+}
+
+footer{
+    /* height: 25px; */
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 15px 5px;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* about css */
+.primary{
+    color: orange;
+}
+
+/* Extra  */
+.btn_css{
+    width: 200px;
+    padding:8px 0px;
+    margin: 2px 0px;
+    color: black;
+    text-decoration: none;
+}
+
+
+.map{
+    height: 300px;
+    width: 80%;
+    border-radius: 20px;
+    margin: 30px 0px;
+}
+
+.cart_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart{
+    padding: 15px 10px;
+    border-radius: 15px;
+    height: 308px;
+    width: 230px;
+    margin: 10px;
+    background-color: orange;
+    text-align: center;
+}
+
+/* admin css */
+
+.masterAdminContainer{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    /* background-color: aquamarine; */
+}
+
+.admin_container{
+    height: 200px;
+    width: 500px;
+    background-color: orange;
+    padding: 10px 10px;
+    border-radius: 10px;
+
+}
+
+.updBtn{
+    padding: 3px 10px; 
+}
+
